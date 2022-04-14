@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "getip",
+  "version": "1.0-SNAPSHOT",
+
+  "name": "GetIP Integration Fabric",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "Waoweens"
+  ],
+  "contact": {
+    "homepage": "https://launcher.meowcorp.net/about",
+    "sources": "https://github.com/Waoweens/getip-integration/tree/fabric"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/getip/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.meowcorp.dynamicip.getip_fabric.GetIP"
+    ]
+  },
+  "mixins": [
+    "getip.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
